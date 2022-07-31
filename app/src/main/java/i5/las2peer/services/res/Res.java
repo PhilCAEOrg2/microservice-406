@@ -89,6 +89,49 @@ public class Res extends RESTService {
 
       /**
    * 
+   * getDishRatings
+   *
+   * 
+   *
+   * 
+   * @return Response 
+   * 
+   */
+  @GET
+  @Path("/dishes/ratings")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.TEXT_PLAIN)
+  @ApiResponses(value = {
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "ok")
+  })
+  @ApiOperation(value = "getDishRatings", notes = " ")
+  public Response getDishRatings() {
+
+
+
+
+     
+    // service method invocations
+
+     
+
+
+
+
+    // ok
+    boolean ok_condition = true;
+    if(ok_condition) {
+      JSONObject ok = new JSONObject();
+
+      
+
+      return Response.status(HttpURLConnection.HTTP_OK).entity(ok.toJSONString()).build();
+    }
+    return null;
+  }
+
+  /**
+   * 
    * getDishes
    *
    * 
